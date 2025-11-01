@@ -1,0 +1,359 @@
+/* =========================
+   RESET + BASE
+   ========================= */
+:root {
+  --bg-1: #070914;
+  --bg-2: #0b1320;
+  --muted: #9aa6b3;
+  --text: #dbe8f5;
+  --accent: #2ea0ff; /* azul de destaque */
+  --glass: rgba(255, 255, 255, 0.03);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+#content,
+.page {
+  height: 100%;
+}
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  background: radial-gradient(
+      600px 400px at 10% 10%,
+      rgba(46, 160, 255, 0.04),
+      transparent 10%
+    ),
+    linear-gradient(180deg, var(--bg-1), var(--bg-2) 70%);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+.page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 28%;
+  min-width: 260px;
+  padding: 48px 36px;
+  border-right: 1px solid rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent);
+}
+
+/* thin glow line on the border like Brittany */
+.sidebar::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  opacity: 0.25;
+}
+
+/* BRAND */
+.brand .name {
+  font-family: "Poppins", Inter, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.4px;
+}
+.brand .accent {
+  color: var(--accent);
+}
+
+.role {
+  margin-top: 6px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.tagline {
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  max-width: 230px;
+  opacity: 0.95;
+}
+
+/* NAV */
+.main-nav {
+  margin-top: 36px;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.nav-item {
+  color: var(--muted);
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  position: relative;
+  transition: color 0.25s ease, transform 0.18s ease;
+  padding-left: 10px;
+  font-size: 0.92rem;
+}
+.nav-item:hover {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+/* left indicator */
+.nav-item::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.28s ease;
+  opacity: 0.9;
+}
+.nav-item.active {
+  color: var(--accent);
+}
+.nav-item.active::before {
+  width: 12px;
+}
+
+/* SOCIALS */
+.socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+  font-size: 1.1rem;
+}
+.socials a {
+  text-decoration: none;
+  color: var(--muted);
+  opacity: 0.85;
+  transition: transform 0.18s ease, opacity 0.18s;
+}
+.socials a:hover {
+  transform: translateY(-3px);
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* MOBILE TOGGLE */
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 20px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/* CONTENT */
+.content {
+  width: 72%;
+  padding: 56px 72px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Panels */
+.panel {
+  max-width: 920px;
+  display: none;
+}
+.panel.active {
+  display: block;
+}
+
+/* Headings */
+h2 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 14px;
+  position: relative;
+  font-weight: 700;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), rgba(46, 160, 255, 0.4));
+  border-radius: 2px;
+}
+
+/* Lead paragraph */
+.lead {
+  color: #cfe6ff;
+  max-width: 900px;
+  margin-bottom: 18px;
+}
+
+/* Job card */
+.job {
+  background: var(--glass);
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  margin-bottom: 20px;
+}
+.job-meta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.year {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+/* Projects list */
+.projects-list {
+  list-style: none;
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+.project {
+  padding: 14px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+}
+
+/* subtle text colors */
+.reveal {
+  color: var(--muted);
+}
+
+/* SCROLLBAR (content area) */
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+.content::-webkit-scrollbar-thumb {
+  background: rgba(46, 160, 255, 0.18);
+  border-radius: 6px;
+}
+
+.about-photo {
+  flex-shrink: 0;
+  width: 180px;           /* tamanho do círculo */
+  height: 180px;
+  border-radius: 50%;     /* mantém o formato redondo */
+  overflow: hidden;
+  border: 2px solid rgba(46, 160, 255, 0.4);
+  box-shadow: 0 0 25px rgba(46, 160, 255, 0.1);
+  background: linear-gradient(180deg, rgba(46,160,255,0.1), transparent);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(46, 160, 255, 0.3);
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* mantém o círculo bonito */
+  object-position: center top; /* ajusta o foco — mude se quiser */
+  filter: brightness(1.1) contrast(1.05);
+  transition: filter 0.3s ease;
+}
+
+.about-photo img:hover {
+  filter: brightness(1.15) contrast(1.1);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    padding: 18px 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  .main-nav ul {
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 0;
+  }
+  .content {
+    width: 100%;
+    padding: 22px;
+  }
+  .page {
+    flex-direction: column;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+  .sidebar::after {
+    display: none;
+  }
+}
+
+/* small screens: make panels stacked and readable */
+@media (max-width: 480px) {
+  .name {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .lead {
+    font-size: 0.96rem;
+  }
+  .tagline {
+    display: none;
+  }
+}
