@@ -1,7 +1,7 @@
-# 💻 Portfólio de [Seu Nome]
+# 💻 Portfólio de Arthur
 
 Bem-vindo ao meu portfólio de desenvolvedor web!  
-Aqui você encontrará meus projetos mais recentes, mostrando minhas habilidades em front-end e minha evolução como desenvolvedor.
+Aqui você encontrará meus projetos mais recentes, mostrando minhas habilidades em front-end e minha evolução como desenvolvedor e também meus certificados.
 
 ---
 
@@ -23,10 +23,8 @@ Este portfólio foi criado para demonstrar:
 
 ---
 
-## 🌐 Acesse os Projetos
+## 🌐 Acesse o Portifólio aqui
 Todos os projetos estão disponíveis no meu portfólio online:  
 [**Clique aqui para acessar**](https://seuportifolio.com)
 
 ---
-
-## 📂 Estrutura do Repositório
