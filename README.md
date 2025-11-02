@@ -1,23 +1,27 @@
-# Meu Site
+# 🌟 Projeto: Meu Site Interativo
 
-Um projeto simples de página web criado com HTML, CSS e JavaScript.  
-Este projeto demonstra minhas habilidades em desenvolvimento front-end, incluindo criação de layouts responsivos, interatividade e organização de código.
+**Um projeto front-end moderno criado com HTML, CSS e JavaScript, desenvolvido para demonstrar minhas habilidades em criação de interfaces responsivas e interativas.**
 
-## 🔹 Tecnologias Utilizadas
-- **HTML5** – Estrutura da página.
-- **CSS3** – Estilização e layout responsivo.
-- **JavaScript (Vanilla JS)** – Interatividade e lógica do site.
+---
 
-## 🌐 Visualização
-Você pode acessar o site online através do GitHub Pages:  
-[Link do site](https://seunome.github.io/nomedorepositorio/)
+## 🚀 Tecnologias Utilizadas
+- **HTML5** – Estrutura semântica e acessível
+- **CSS3** – Design moderno e responsivo
+- **JavaScript** – Interatividade e lógica dinâmica
+- **Boa prática de organização de código** e modularidade
 
-## 🚀 Funcionalidades
-- Layout moderno e responsivo.
-- Navegação simples e intuitiva.
-- Elementos interativos com JavaScript.
+---
 
-## 🛠️ Como Rodar Localmente
-1. Clone este repositório:
-```bash
-git clone https://github.com/seunome/nomedorepositorio.git
+## 🎯 Objetivo do Projeto
+Este projeto foi desenvolvido para **demonstrar minhas habilidades de front-end** e servir como exemplo de projetos disponíveis no meu portfólio.  
+Ele mostra como criar um layout limpo, interatividade com JS e responsividade em diferentes dispositivos.
+
+---
+
+## 🔗 Visualização
+O acesso ao projeto está **restrito ao meu portfólio**.  
+Veja o projeto em ação aqui: [Meu Portfólio](https://seuportifolio.com)
+
+---
+
+## 📂 Estrutura do Projeto
