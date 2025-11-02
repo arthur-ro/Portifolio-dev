@@ -1,27 +1,32 @@
-# 🌟 Projeto: Meu Site Interativo
+# 💻 Portfólio de [Seu Nome]
 
-**Um projeto front-end moderno criado com HTML, CSS e JavaScript, desenvolvido para demonstrar minhas habilidades em criação de interfaces responsivas e interativas.**
+Bem-vindo ao meu portfólio de desenvolvedor web!  
+Aqui você encontrará meus projetos mais recentes, mostrando minhas habilidades em front-end e minha evolução como desenvolvedor.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🔹 Tecnologias e Ferramentas
 - **HTML5** – Estrutura semântica e acessível
-- **CSS3** – Design moderno e responsivo
-- **JavaScript** – Interatividade e lógica dinâmica
-- **Boa prática de organização de código** e modularidade
+- **CSS3 / Flexbox / Grid** – Layouts modernos e responsivos
+- **JavaScript (Vanilla JS)** – Funcionalidades interativas e dinâmicas
+- **Git & GitHub** – Controle de versão e colaboração
+- **Design Responsivo** – Experiência otimizada em desktop e mobile
 
 ---
 
-## 🎯 Objetivo do Projeto
-Este projeto foi desenvolvido para **demonstrar minhas habilidades de front-end** e servir como exemplo de projetos disponíveis no meu portfólio.  
-Ele mostra como criar um layout limpo, interatividade com JS e responsividade em diferentes dispositivos.
+## 🎯 Sobre o Portfólio
+Este portfólio foi criado para demonstrar:
+- Projetos práticos desenvolvidos do zero  
+- Interface moderna e intuitiva  
+- Organização de código e boas práticas em front-end  
+- Minha capacidade de transformar ideias em projetos funcionais
 
 ---
 
-## 🔗 Visualização
-O acesso ao projeto está **restrito ao meu portfólio**.  
-Veja o projeto em ação aqui: [Meu Portfólio](https://seuportifolio.com)
+## 🌐 Acesse os Projetos
+Todos os projetos estão disponíveis no meu portfólio online:  
+[**Clique aqui para acessar**](https://seuportifolio.com)
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📂 Estrutura do Repositório
